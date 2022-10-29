@@ -1,0 +1,136 @@
+/* CSS Reset  */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: white;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+/* Navigation bar  */
+.left {
+  display: inline-block;
+  position: absolute;
+  left: 34px;
+  top: 20px;
+}
+
+.left img {
+  width: 75px;
+  border-radius: 15px;
+}
+
+.left div {
+  text-align: center;
+  line-height: 15px;
+  font-size: 14px;
+}
+
+.mid {
+  display: block;
+  width: 40%;
+  margin: 20px auto;
+}
+
+.right {
+  display: inline-block;
+  position: absolute;
+  right: 34px;
+  top: 20px;
+}
+
+.navbar {
+  display: inline-block;
+}
+
+.navbar li {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.navbar li a {
+  text-decoration: none;
+  padding: 20px 23px;
+  color: white;
+}
+
+.navbar li a:hover,
+.navbar li a.active {
+  text-decoration: underline;
+  color: whitesmoke;
+}
+
+/* Video Container  */
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  video {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio: 16/9) {
+  video {
+    width: auto;
+    height: 100%;
+  }
+}
+
+.container {
+  border: 4px solid rgb(202, 194, 194);
+  margin: 100px 100px;
+  padding: 25px 15px;
+  width: 28%;
+  border-radius: 20px;
+}
+
+/* Form Properties  */
+.form-group input {
+  text-align: center;
+  display: block;
+  width: 350px;
+  padding: 1px;
+  border: 2px solid black;
+  margin: 11px auto;
+  font-size: 20px;
+  border-radius: 8px;
+  height: 22px;
+}
+
+.container h1 {
+  text-align: center;
+}
+
+.container button {
+  display: block;
+  width: 40%;
+  margin: 20px auto;
+}
+
+/* Utility Classes */
+.btn {
+  margin: 4px 9px;
+  border: 1px solid white;
+  background-color: black;
+  color: white;
+  padding: 7px 14px;
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.btn:hover {
+  background-color: rgb(56, 55, 55);
+}
